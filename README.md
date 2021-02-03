@@ -1,5 +1,5 @@
 # wsc2019
-This is a solutions files of Worldskills 2019 Web Technologies.
+This is a solution files of Worldskills 2019 Web Technologies.
 Please use this files to learn Worldskills Test Projects. 
 You can also find some videos about this in Youtube Channel.
 
