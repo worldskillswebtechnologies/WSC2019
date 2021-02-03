@@ -1,0 +1,105 @@
+/* reset */
+body {
+    background:#f2f2f2;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/* nav */
+.navbar {
+    background:white;
+    box-shadow: rgba(0,0,0,.1) 0 5px 10px;
+}
+
+/* content */
+.box {
+    padding:2rem;
+    background:white;
+    box-shadow: rgba(0,0,0,.1) 0 5px 10px;
+    margin-top: 2rem;
+    margin-bottom:2rem;
+}
+
+/* detail */
+tr.row {
+    display: table-row;
+}
+
+.sessions {
+    height:40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.session {
+    line-height: 40px;
+    padding:0 5px;
+    display: block;
+    height: 100%;
+    position: absolute;
+    border:#ccc solid 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background:white;
+}
+
+.session.registered {
+    background: #e2ffe8;
+    border-color: #37e05d;
+}
+
+.time-table {
+    border-bottom: #ccc solid 1px;
+}
+
+.time-table tbody .channel,
+.time-table tbody .channel ~ td{
+    border-top: #ccc solid 1px;
+}
+
+.time-table tbody td:not(:first-child) {
+    border-left:#ccc solid 1px;
+}
+
+/* session detail */
+.session-table th {
+    padding-right:20px;
+    padding-top:10px;
+}
+
+/* register */
+.ticket {
+    border: #ccc solid 1px;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: .5;
+    pointer-events: none;
+    filter:grayscale(100%);
+}
+
+.workshop {
+    cursor: pointer;
+}
+
+/* alert */
+.alert-wrapper {
+    position: fixed;
+    right:2rem;
+    top:5rem;
+}
+
+.slide-alert-enter-active,
+.slide-alert-leave-active {
+    transition: all .3s;
+}
+
+.slide-alert-enter,
+.slide-alert-leave-to {
+    transform: translateX(100px);
+    opacity: 0;
+}

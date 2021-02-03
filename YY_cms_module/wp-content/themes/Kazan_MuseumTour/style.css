@@ -1,0 +1,423 @@
+/*
+Template: blankslate
+Theme Name: Kazan_MuseumTour
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header */
+#header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, .1) 0 5px 10px;
+    background: white;
+}
+
+#site-title {
+    font-size: 1.5rem;
+}
+
+/* header - menu */
+#menu > div > ul {
+    display: flex;
+}
+
+#menu > div > ul > li {
+    position: relative;
+}
+
+#menu > div > ul > li > a {
+    display: inline-block;
+    line-height: 80px;
+    padding: 0 10px;
+}
+
+#menu > div > ul li:hover > a {
+    background: #279fd6;
+    color: white;
+}
+
+#menu > div > ul > li > ul {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 280px;
+    background: white;
+    border: #ccc solid 1px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all .25s;
+}
+
+#menu > div > ul > li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+#menu > div > ul > li > ul a {
+    display: block;
+    padding: 10px 20px;
+}
+
+/* header - responsive menu */
+@media screen and (max-width: 782px) {
+    #header {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    #menu > div > ul > li {
+        position: static;
+    }
+
+    #menu > div > ul > li > a {
+        line-height: 40px;
+    }
+
+    #menu > div > ul > li > ul {
+        width: 100%;
+    }
+}
+
+/* header - fixed */
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.admin-bar #header {
+    top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+    .admin-bar #header {
+        top: 46px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed;
+    }
+}
+
+/* visual */
+#visual {
+    height: 100vh;
+    background-image: url(images/visual.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visual .cover {
+    text-align: center;
+    color: white;
+}
+
+/* font */
+.h1 {
+    font-size: 3.5rem;
+    line-height: 1.3em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.h2 {
+    font-size: 2rem;
+    line-height: 1.3em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+.h3 {
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p, .p {
+    font-size: 1rem;
+    line-height: 1.6em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+@media screen and (max-width: 782px) {
+    .h1 {
+        font-size: 2.8rem;
+    }
+}
+
+/* container */
+.container {
+    /*width: 1440px;*/
+    width:1140px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1280px) {
+    .container {
+        width: 780px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/* btn */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border: #0cbaba solid 1px;
+    color: #0cbaba;
+    background: white;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0cbaba;
+    color: white;
+}
+
+/* deck & card */
+.deck {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+.card-article {
+    padding: 20px 30px;
+    border: #ccc solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-article p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.card-thumbnail img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+@media screen and (max-width: 782px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .card-article {
+        order: 1;
+    }
+
+    .card-thumbnail img {
+        height: 200px;
+    }
+}
+
+/* contact form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: #aaa solid 1px;
+}
+
+.input::placeholder {
+    font-size: 1rem;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+#footer {
+    margin-top: 80px;
+}
+
+#footer .container {
+    padding: 80px 0;
+    border-top: #ccc solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 782px) {
+    #footer .container {
+        flex-direction: column;
+    }
+
+    #copyright {
+        margin-bottom: 20px;
+    }
+}
+
+/* selected */
+.selected {
+    padding: 130px 0 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.selected .container {
+    background: white;
+    padding: 20px 50px 80px;
+}
+
+@media screen and (max-width: 480px) {
+    .selected .container {
+        width: 90%;
+    }
+}
+
+/* banner */
+.banner {
+    height: 50vh;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* singular */
+.singular {
+    padding-top: 80px;
+}
+
+.singular .h2 {
+    margin-bottom: 20px;
+}
+
+/* loading */
+#loading {
+    width:100%;
+    height:100%;
+    background:white;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:100000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading span {
+    display: block;
+    width:16px;
+    height:16px;
+    background:#0cbaba;
+    border-radius: 50%;
+    margin:0 5px;
+    animation: loading .8s infinite;
+}
+
+.loading span:nth-child(1) {
+    animation-delay: -.1s;
+}
+.loading span:nth-child(2) {
+    animation-delay: -.2s;
+}
+.loading span:nth-child(3) {
+    animation-delay: -.3s;
+}
+.loading span:nth-child(4) {
+    animation-delay: -.4s;
+}
+.loading span:nth-child(5) {
+    animation-delay: -.5s;
+}
+
+@keyframes loading {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(-15px) }
+    50% { transform: translateY(0) }
+    100% { transform: translateY(0) }
+}
+
+
+
+
+
+
+
+
+

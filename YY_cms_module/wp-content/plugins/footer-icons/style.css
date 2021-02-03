@@ -1,0 +1,11 @@
+/* social */
+.social {
+    font-size:1.25rem;
+    color:#666;
+}
+.social ul {
+    display:flex;
+}
+.social li {
+    margin:0 10px;
+}

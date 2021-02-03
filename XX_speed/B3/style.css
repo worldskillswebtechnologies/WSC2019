@@ -1,0 +1,68 @@
+/* reset */
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* loading */
+.loading {
+    width:0;
+    height:0;
+    position:relative;
+}
+
+/* circle */
+.circle {
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background: #000;
+    animation:loading 2s infinite;
+    position: absolute;
+}
+
+/* keyframes */
+@keyframes loading {
+    0%, 100% {
+        left:-30px; top:-30px;
+    }
+    25% {
+        left:30px; top:-30px;
+    }
+    50% {
+        left:30px; top:30px;
+    }
+    75% {
+        left:-30px; top:30px;
+    }
+}
+
+/* circles */
+.circle-1 {
+    animation-delay: 0s;
+    background:#19a68c;
+}
+
+.circle-2 {
+    animation-delay: -.5s;
+    background:#193b48;
+}
+
+.circle-3 {
+    animation-delay: -1s;
+    background:#fda543;
+}
+
+.circle-4 {
+    animation-delay: -1.5s;
+    background:#f63d3a;
+}

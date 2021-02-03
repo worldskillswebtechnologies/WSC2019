@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bdcae511-8e12-468f-b2f0-0e0dd3605f64" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="DrupalConfiguration">
+    <drupalPath />
+  </component>
+  <component name="JoomlaConfiguration">
+    <joomlaConfigPath />
+    <joomlaPath />
+  </component>
+  <component name="ProjectId" id="1h2KH4FWuyrNPLpBERidEwctIzQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/2019-solution" />
+    <property name="settings.editor.selected.configurable" value="settings.php.frameworks" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bdcae511-8e12-468f-b2f0-0e0dd3605f64" name="Default Changelist" comment="" />
+      <created>1599203656032</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599203656032</updated>
+      <workItem from="1599203657133" duration="2060000" />
+      <workItem from="1599213877930" duration="8119000" />
+      <workItem from="1599260838239" duration="18757000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="692" y="306" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599260871214">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="692" y="306" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1599260871214" />
+    <state x="740" y="260" key="FileChooserDialogImpl" timestamp="1599292142189">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="260" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1599292142189" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1599203697164">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1599203697164" />
+    <state x="826" y="287" width="587" height="534" key="find.popup" timestamp="1599208083879">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="826" y="287" width="587" height="534" key="find.popup/0.0.1920.1040/1920.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1599208083879" />
+    <state x="584" y="281" key="search.everywhere.popup" timestamp="1599260847280">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="584" y="281" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1599260847280" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>C:\xampp\htdocs\YY_cms_module</wordpressPath>
+  </component>
+</project>

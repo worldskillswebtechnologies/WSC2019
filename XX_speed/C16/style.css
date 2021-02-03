@@ -1,0 +1,122 @@
+/* reset */
+body {
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* face */
+#face {
+    width:400px;
+    height:400px;
+    box-sizing: border-box;
+    border:dimgray solid 20px;
+    border-radius:50%;
+    background:darkgray;
+
+    transition: background-color .5s, border-color .5s;
+}
+
+.eyes {
+    width: 55%;
+    margin:25% auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eye {
+    width:60px;
+    height:60px;
+    background:dimgray;
+    border-radius:50%;
+
+    transition: background-color .5s;
+}
+
+.mouth {
+    width:65%;
+    height:40px;
+    margin:20% auto 0;
+    display: flex;
+}
+
+.lip {
+    width:50%;
+    height:100%;
+    background:dimgray;
+
+    transition: background-color .5s, border-radius .5s;
+}
+
+/* face 1 */
+#face[data-face="1"] {
+    background: #a9db7a;
+    border-color: #93c564;
+}
+
+#face[data-face="1"] .eye,
+#face[data-face="1"] .lip {
+    background: #83b458;
+}
+
+#face[data-face="1"] .lip:nth-child(1) {
+    border-bottom-left-radius: 100%;
+}
+
+#face[data-face="1"] .lip:nth-child(2) {
+    border-bottom-right-radius: 100%;
+}
+
+/* face 2 */
+#face[data-face="2"] {
+    background: #eed16b;
+    border-color: #dbad51;
+}
+
+#face[data-face="2"] .eye,
+#face[data-face="2"] .lip {
+    background: #dca452;
+}
+
+#face[data-face="2"] .lip:nth-child(1) {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#face[data-face="2"] .lip:nth-child(2) {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* face 3 */
+#face[data-face="3"] {
+    background: #ee9295;
+    border-color: #e17376;
+}
+
+#face[data-face="3"] .eye,
+#face[data-face="3"] .lip {
+    background: #d96065;
+}
+
+#face[data-face="3"] .lip:nth-child(1) {
+    border-top-left-radius: 100%;
+}
+
+#face[data-face="3"] .lip:nth-child(2) {
+    border-top-right-radius: 100%;
+}
+
+/* buttons */
+.buttons {
+    margin-top:20px;
+}
+.btn {
+    font-size: 1.5rem;
+    padding:15px 35px;
+}

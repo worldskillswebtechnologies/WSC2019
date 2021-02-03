@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Knowledge Explorer</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="app">
+    <edit-mode v-if="mode === 'edit'"
+       :elements="elements" :links="links"></edit-mode>
+    <view-mode v-if="mode === 'view'"
+       :elements="elements" :links="links"></view-mode>
+</div>
+
+<script src="vendor/ckeditor/ckeditor.js"></script>
+<script src="vendor/vue/vue.js"></script>
+
+<script src="src/components/EditMode.js"></script>
+<script src="src/components/ViewMode.js"></script>
+<script src="src/components/LinkGroup.js"></script>
+<script src="src/components/LinkItem.js"></script>
+<script src="src/components/ElementGroup.js"></script>
+<script src="src/components/ElementItem.js"></script>
+<script src="src/components/EditorItem.js"></script>
+
+<script src="src/main.js"></script>
+
+</body>
+</html>
